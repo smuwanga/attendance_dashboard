@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('index');
 });
+*/
 
-Route::get('my-home', 'HomeController@myHome');
+Route::get('/', 'HomeController@myHome');
+Route::get('staff','StaffController@index');
 
 Route::get('my-users', 'HomeController@myUsers');

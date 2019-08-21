@@ -14,19 +14,46 @@
 
    <meta name="author" content="">
 
-   <title>SB Admin 2 - Bootstrap Admin Theme</title>
+   <title>Attendance Timesheet</title>
+
 
 
   <!-- Custom fonts for this template-->
   <link href="{!! asset('css/all.min.css') !!}" rel="stylesheet">
+  <link href="{!! asset('css/datepicker.css') !!}" rel="stylesheet">
   <link href="{!! asset('css/fonts-googleapis.css') !!}" rel="stylesheet">
-
-
 
   <!-- Custom CSS -->
   <link href="{!! asset('css/sb-admin-2.min.css') !!}" rel="stylesheet">
+  
 
 
+
+<!-- Bootstrap core JavaScript-->
+<script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Core plugin JavaScript-->
+<script src="{{ asset('js/jquery-easing/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/jquery/jquery.js') }}" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+
+
+
+  <!-- Custom scripts for all pages-->
+  <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
+
+ 
+
+ <script>
+    $(document).ready(function() {
+           $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy'
+                
+            });
+         });
+    </script>
 
   
 
@@ -66,22 +93,7 @@
 
    <!-- /#wrapper --
   
-<!-- Bootstrap core JavaScript-->
-  <script src="js/jquery/jquery.min.js"></script>
-  <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Core plugin JavaScript-->
-  <script src="js/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="js/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 
